@@ -1,0 +1,15 @@
+<h1>Chicago Tow List</h1>
+
+<% @towed_vehicles.each do |towed_vehicle| %>
+  <h3><%= towed_vehicle["color"] %></h3>
+  <h3><%= towed_vehicle["inventory_number"] %></h3>
+  <h3><%= towed_vehicle["make"] %></h3>
+   <h3><%= towed_vehicle["plate"] %></h3>
+  <h3><%= towed_vehicle["state"] %></h3>
+  <h3><%= towed_vehicle["style"] %></h3>
+  <h3><%= towed_vehicle["tow_date"] %></h3>
+  <h3><%= towed_vehicle["tow_facility_phone"] %></h3>
+  <h3><%= towed_vehicle["towed_to_address"] %></h3>
+  <br>
+  
+<% end  %>
